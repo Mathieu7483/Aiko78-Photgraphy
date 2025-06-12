@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aiko78 Photography</title>
+    <link rel="stylesheet" href="style.css">
+   </head>
+<body>
+<header>
+    <nav class="navbar">
+      <div class="navbar-container">
+        <div class="logo">
+          <a href="index.html">Aiko78 Photography</a>
+        </div>
+        <button class="burger-menu">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </button>
+        <ul class="nav-links">
+          <li><a href="portraits.html">Portraits</a></li>
+          <li><a href="paysages.html">Paysages</a></li>
+          <li><a href="Animalier.html">Animalier</a></li>
+          <li><a href="a-propos.html">À Propos</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </div>
+    </nav>
+    </header>
+    <main class="page-container">
+        <section class="hero">
+            <h1>Bienvenue sur Aiko78 Photography</h1>
+            <div class="hero-gallery">
+                <a href="portraits.html"><img src="images/portraits/IMG_0235.jpg" width="200" height="300" alt="Portrait 1"></a><a href="paysages.html"><img src="images/paysages/IMG_0737.jpg" width="300" height="200" alt="Paysage 1"></a><a href="Animalier.html"><img src="images/Animalier/husky.jpg" width="200" height="300" alt="Animalier 1"></a>
+            </div>
+            
+        </section>
+        <br>
+        <section class="a-propos">
+    <h2>À propos de moi</h2>
+    <div class="border-wrapper">
+        <div class="animated-border"></div>
+            <p class="paragraphe-centre-ajuste">
+            Au cœur de Thonon-les-Bains, là où les Alpes rencontrent les eaux scintillantes du lac Léman, vit un photographe dont le regard capture l'âme de cette région enchanteresse. Passionné par la lumière changeante qui danse sur les paysages lémaniques, il immortalise les instants fugaces où la nature révèle sa beauté brute.<br>
+
+            Que ce soit les reflets dorés du soleil couchant sur les vagues, les sommets enneigés se mirant dans le lac ou les ruelles pittoresques de la vieille ville, chaque cliché est une ode à la poésie du Léman. Son objectif saisit l'émotion pure, qu'il s'agisse d'un sourire partagé, d'un paysage grandiose ou d'un détail discret.<br>
+
+            Ce photographe, c'est un conteur d'histoires visuelles, un amoureux de son environnement, un artiste qui trouve l'inspiration dans la sérénité du lac et la majesté des montagnes. Il vous invite à découvrir le Léman à travers son regard, à partager son émerveillement et à conserver des souvenirs inoubliables de cette région unique.
+         </p>
+        </div>
+    </div>
+</section>
+    </a>
+    </main>
+        <footer>
+            <p>© Aiko78 Photography. Tous droits réservés.</p>
+        </footer>
+
+        <audio controls loop>
+            <source src="musique/musique.mp3" type="audio/mpeg">
+        Votre navigateur ne supporte pas l'élément audio.
+        </audio>
+        <script>
+          // Ton code JavaScript ici
+          const burgerMenu = document.querySelector(".burger-menu");
+          const navLinks = document.querySelector(".nav-links");
+    
+          burgerMenu.addEventListener("click", () => {
+            navLinks.classList.toggle("active");
+            burgerMenu.classList.toggle("active");
+          });
+        </script>
+</body>
+</html>

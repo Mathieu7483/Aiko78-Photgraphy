@@ -1,0 +1,416 @@
+body {
+  font-family: sans-serif;
+  margin: 0;
+  padding: 0;
+  background-image: url("images/Paysages/IMG_0793S.jpg");
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-attachment: fixed;
+  background-color: black;
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.navbar {
+  background-color: rgba(0, 0, 0, 0.3);
+  color: white;
+  padding: 1em 0;
+}
+.container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.navbar-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 0 20px;
+}
+.logo a {
+  color: whitesmoke;
+  text-decoration: none;
+  font-size: 2em;
+  margin: left 0;
+}
+
+.nav-links {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+}
+
+.nav-links li a {
+  color: white;
+  text-decoration: none;
+  padding: 0 15px;
+}
+.nav-links li a:hover {
+  color: rgb(38, 82, 159);
+  transition: color 0.3s ease-in-out;
+}
+.burger-menu {
+  display: none;
+  background: transparent;
+  border: none;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.bar {
+  display: block;
+  width: 25px;
+  height: 3px;
+  background-color: white;
+  margin: 5px auto;
+  transition: all 0.3s ease-in-out; /* Animation pour la transformation du burger */
+}
+
+/* Media query pour les écrans plus petits (par exemple, moins de 768px de largeur) */
+@media screen and (max-width: 768px) {
+  .nav-links {
+    display: none;
+    height: 400px;
+    position: absolute;
+    right: 2rem;
+    top: 60px;
+    width: 200px;
+    background: rgba(0, 0, 0, 0.3);
+    backdrop-filter: blur(15px);
+    border-radius: 10px;
+    overflow: hidden;
+    flex-direction: column;
+    padding: 10px 0;
+    align-items: center;
+    transition: height cubic-bezier(0.175, 0.885, 0.32, 1.275);
+  }
+
+  .nav-links.active {
+    display: flex;
+    height: auto;
+  }
+
+  .nav-links li {
+    padding: 15px 0;
+    width: 100%;
+  }
+  .nav-links li a {
+    color: white;
+    text-decoration: none;
+    display: block;
+  }
+  .nav-links li a:hover {
+    color: rgb(38, 82, 159);
+    transition: color 0.3s ease-in-out;
+  }
+  .burger-menu {
+    display: block;
+  }
+  /* Styles pour animer le burger menu lors de l'ouverture */
+  .burger-menu.active .bar:nth-child(1) {
+    transform: translateY(8px) rotate(45deg);
+  }
+
+  .burger-menu.active .bar:nth-child(2) {
+    opacity: 0;
+  }
+
+  .burger-menu.active .bar:nth-child(3) {
+    transform: translateY(-8px) rotate(-45deg);
+  }
+}
+h1 {
+  text-align: center;
+  color: rgb(0, 0, 0);
+  transition: color 0.3s ease-in-out;
+}
+
+h1:hover {
+  color: rgb(38, 82, 159);
+  transition: color 0.3s ease-in-out;
+}
+.page-container {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 40px 20px;
+}
+
+.hero {
+  text-align: center;
+  border-radius: 10px;
+}
+
+.hero-gallery {
+  text-align: center; /* Garde ceci pour centrer les images */
+}
+
+.hero-gallery a {
+  display: inline-block; /* Permet de définir la taille et les marges tout en restant sur la même ligne */
+  margin-right: 10px; /* Ajoute une marge à droite pour espacer les images */
+}
+
+.hero-gallery a:last-child {
+  margin-right: 0; /* Supprime la marge à droite du dernier élément */
+}
+
+.hero-gallery img {
+  border-radius: 30px;
+  padding: 15px;
+  transition: transform 0.8s ease-in-out;
+  display: block; /* Important pour que le padding n'affecte pas la ligne */
+}
+
+.hero-gallery img:hover {
+  transform: rotate3D(0, 1, 0, 180deg);
+}
+
+p {
+  display: flex;
+  position: relative;
+  justify-content: center;
+  align-items: center;
+}
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 20px;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.gallery-item {
+  margin-bottom: 20px;
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 200px;
+}
+
+.gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  display: block;
+  margin: 0;
+  transition: transform 0.3s ease-in-out;
+}
+
+.gallery-item img:hover {
+  transform: scale(1.05);
+}
+.a-propos {
+  text-align: center;
+  padding: 0;
+  margin: 0 auto;
+  max-width: 800px;
+  position: relative;
+}
+
+.paragraphe-a-propos {
+  text-align: justify;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  color: black;
+  overflow: hidden;
+}
+
+.titre-a-propos {
+  text-align: center;
+  padding: 20px;
+  margin: 0 auto;
+  max-width: 800px;
+  color: black;
+  overflow: hidden;
+}
+
+.border-wrapper {
+  position: relative;
+  display: block;
+  width: 800px;
+  border-radius: 10px;
+  margin: 10px auto;
+  z-index: 0;
+  box-sizing: border-box;
+}
+
+.animated-border {
+  position: absolute;
+  top: 0px;
+  left: 10px;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(
+    45deg,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #ff0000,
+    #00f0f0,
+    #00ff00,
+    #0000ff,
+    #f00f0f
+  );
+  background-size: 400%;
+  animation: animate-border 8s linear infinite;
+  filter: blur(10px);
+  z-index: -1;
+  border-radius: 10px;
+}
+
+.paragraphe-centre-ajuste {
+  position: relative;
+  z-index: 1;
+  margin: 10px;
+  padding: 20px;
+  width: 100%;
+  background-color: rgba(255, 255, 255, 0.85);
+  backdrop-filter: blur(20px);
+  border-radius: 10px;
+  text-align: justify;
+  line-height: 1.6;
+
+  box-sizing: border-box;
+}
+
+@keyframes animate-border {
+  0% {
+    background-position: 0 0;
+  }
+  50% {
+    background-position: 400% 0;
+  }
+  100% {
+    background-position: 0 0;
+  }
+}
+
+footer {
+  margin: auto;
+  text-align: center;
+}
+audio {
+  margin: auto;
+  text-align: center;
+}
+
+.form-container {
+  background-color: rgba(255, 255, 255, 0.5);
+  width: 50%;
+  padding: 20px;
+  border-radius: 10px;
+  margin: 50px auto;
+}
+
+.form-container label {
+  display: flex;
+  margin-bottom: 5px;
+}
+
+.form-container input[type="text"],
+.form-container input[type="email"] {
+  padding: 15px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+}
+
+.form-container textarea {
+  width: calc(100% - 12px);
+  padding: 5px;
+  margin-bottom: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  height: 300px;
+  resize: none;
+}
+.form-container button[type="submit"] {
+  background-color: #007bff;
+  color: white;
+  padding: 10px 15px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.form-container button[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Styles de la lightbox */
+.lightbox {
+  display: none;
+  position: fixed;
+  z-index: 999;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.9);
+}
+
+.lightbox-content {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  max-width: 90%;
+  max-height: 90%;
+  width: auto;
+  height: auto;
+  object-fit: contain;
+}
+
+.lightbox-close {
+  position: absolute;
+  top: 20px;
+  right: 30px;
+  color: #f1f1f1;
+  font-size: 40px;
+  font-weight: bold;
+  transition: 0.3s;
+  cursor: pointer;
+  user-select: none;
+}
+
+.lightbox-close:hover,
+.lightbox-close:focus {
+  color: #bbb;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+.lightbox-return-button {
+  position: absolute;
+  bottom: 20px;
+  left: 50%;
+  transform: translateX(-50%);
+  background-color: rgba(255, 255, 255, 0.1);
+  color: #f1f1f1;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 16px;
+  transition: background-color 0.3s ease;
+}
+
+.lightbox-return-button:hover {
+  background-color: rgba(255, 255, 255, 0.3);
+}

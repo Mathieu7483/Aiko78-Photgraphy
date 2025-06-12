@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Aiko78 Photography - Portraits</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <nav class="navbar">
+        <div class="navbar-container">
+          <div class="logo">
+            <a href="index.html">Aiko78 Photography</a>
+          </div>
+          <button class="burger-menu">
+            <span class="bar"></span>
+            <span class="bar"></span>
+            <span class="bar"></span>
+          </button>
+          <ul class="nav-links">
+            <li><a href="index.html">Accueil</a></li>
+            <li><a href="portraits.html">Portraits</a></li>
+            <li><a href="paysages.html">Paysages</a></li>
+            <li><a href="Animalier.html">Animalier</a></li>
+            <li><a href="a-propos.html">À Propos</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <main class="page-container">
+      <h1>Portraits</h1>
+      <section class="gallery">
+        <div class="gallery-item">
+          <a
+            href="images/Portraits/IMG_0235.jpg"
+            data-lightbox-image="images/Portraits/IMG_0235.jpg"
+            data-alt="Léonie"
+          >
+            <img src="images/Portraits/IMG_0235.jpg" alt="Léonie" />
+          </a>
+        </div>
+        <div class="gallery-item">
+          <a
+            href="images/Portraits/Camille1.jpg"
+            data-lightbox-image="images/Portraits/Camille1.jpg"
+            data-alt="Camille"
+          >
+            <img src="images/Portraits/Camille1.jpg" alt="Camille" />
+          </a>
+        </div>
+      </section>
+    </main>
+    <footer>
+      <p>© Aiko78 Photography. Tous droits réservés.</p>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+      <span class="lightbox-close">&times;</span>
+      <img id="lightbox-image" class="lightbox-content" src="" alt="" />
+      <button id="lightbox-return" class="lightbox-return-button">
+        Retour à la galerie
+      </button>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
