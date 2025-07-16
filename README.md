@@ -46,7 +46,7 @@ Rôle : Photographe & Développeur
 
 Contact : [aiko7883@hotmail.com]
 
-Réseaux Sociaux Photo : [https://www.facebook.com/profile.php?id=100063556742046][
+Réseaux Sociaux Photo : [][]
 
 📞 Me Contacter
 N'hésitez pas à me contacter via la [page Contact]([Lien vers la page Contact]) ou directement par email pour toute demande ou collaboration. Je suis toujours ravi d'échanger autour de la photographie !
