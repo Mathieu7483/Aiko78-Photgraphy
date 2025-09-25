@@ -1,0 +1,13 @@
+UML ou Unified Modeling Language 
+Les différents types de vues et de diagrammes en UML (Unified Modeling Language)
+permettent de représenter un système logiciel sous plusieurs angles complémentaires.
+Le diagramme de cas d’utilisation montre les interactions entre les utilisateurs (acteurs) et le système,
+utile pour capturer les besoins fonctionnels. Le diagramme de classes décrit la structure statique du système
+: les entités, leurs attributs, méthodes et relations, essentiel pour la modélisation orientée objet.
+Le diagramme de séquence illustre le déroulement temporel des échanges entre objets, idéal pour comprendre les scénarios métier.
+Le diagramme d’activités représente les flux de contrôle et de données, utile pour modéliser les processus ou algorithmes.
+Le diagramme de packages organise les classes en groupes logiques, facilitant la vision modulaire et architecturale.
+Enfin, le diagramme d’états permet de suivre les transitions d’un objet selon ses événements,
+particulièrement utile pour les systèmes réactifs. Ensemble, ces vues offrent une compréhension globale,
+précise et cohérente du système à concevoir ou à analyser.
+
