@@ -2,7 +2,7 @@ body {
   font-family: sans-serif;
   margin: 0;
   padding: 0;
-  background-image: url("images/Paysages/IMG_0793S.jpg");
+  background-image: url("img/Paysages/IMG_0793S.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
@@ -192,7 +192,7 @@ p {
   margin-bottom: 20px;
   border-radius: 8px;
   overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  
   display: flex;
   justify-content: center;
   align-items: center;
@@ -205,7 +205,7 @@ p {
   object-fit: contain;
   display: block;
   margin: 0;
-  transition: transform 0.3s ease-in-out;
+  transition: transform 0.3s ease-in-out;box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
 }
 
 .gallery-item img:hover {
